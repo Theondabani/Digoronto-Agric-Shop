@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digoronto Agric-Shop</title>
+    <style>
+        div#wrapper {
+            border: 0px solid rgb(0, 0, 0);
+        }
+        header {
+            background-color: whitecream;
+            padding: 50px;
+        }
+        nav li {
+            display: inline-flex;
+            list-style-type: none;
+            }
+        nav {
+            background-color: whitecream;);
+            text-align: center;
+            padding: 0;
+            border: 0px;
+        }
+        nav ul li {
+            padding: 15px;
+            margin: 25px;
+            width: 30px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+        #main-content ul {
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+        }
+         #main-content li {
+            flex: 1;
+            padding: 10px;
+             background-color: rgba(255, 255, 255, 0.171);
+            margin: 5px;
+            border-radius: 5px;
+        }
+         #featured-articles {
+            display: flex;
+            justify-content: space-between;
+        }
+            #featured-articles section {
+                flex: 1;
+                padding: 20px;
+                background-color: rgba(255, 255, 255, 0.281);
+                margin: 10px;
+                border-radius: 5px;
+            }
+            #mission-vision {
+                display: flex;
+                justify-content: space-between;
+            }
+            #mission-vision section {
+                flex: 1;
+                padding: 20px;
+                background-color: rgba(255, 255, 255, 0.664);
+                margin-top: 10px;
+                border-radius: 5px;
+            }
+            footer ul {
+                display: flex;
+                justify-content: center;
+                list-style-type: none;
+                padding: 20;
+            }
+            footer li {
+                flex: 1;
+                text-align: center;
+            }
+            footer li a {
+                text-decoration: none;
+                color: black;
+            }
+            footer li a:hover {
+                color:greenyellow;
+            }
+            footer {
+                background-color: whitecream;
+                padding: 20px;
+                margin-bottom: 20px;
+            }
+            h3 {
+                text-align: center;
+                margin-top: 40px;
+            }
+             h4 {
+                text-align: center;
+            }
+            #back-video {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                z-index: -1;
+            }
+            #active,nav ul li:hover {
+                background-color: rgba(47, 127, 255, 0.687);
+                border-radius: 5px;
+                object-fit: cover;
+            }
+            .sub-menu-1 {
+                display: none;
+            }
+            nav ul li:hover .sub-menu-1 {
+                display: block;
+                position: absolute;
+                background-color: rgba(47, 127, 255, 0.687);
+                margin-top: 15px;
+                margin-left: -15px;
+            }
+            nav ul li:hover .sub-menu-1 ul {
+                display: block;
+                margin: 10px;
+            }
+             nav ul li:hover .sub-menu-1 ul li {
+                display: block;
+                width: 100px;
+                padding: 10px;
+                border-bottom: 1px solid white;
+                background-color: transparent;
+                border-radius: 0;
+                text-align: left;
+            }
+            .sub-menu-2 {
+                display: none;
+            }
+            .hover-me:hover .sub-menu-2 {
+                display: block;
+                position: absolute;
+                background-color: rgba(47, 127, 255, 0.687);
+                margin-top: -40px;
+                margin-left: 140px;
+            }
+             .hover-me:hover .sub-menu-2 ul {
+                display: block;
+                margin: 10px;
+            }
+             .hover-me:hover .sub-menu-2 ul li {
+                display: block;
+                width: 100px;
+                padding: 10px;
+                border-bottom: 1px solid white;
+                background-color: transparent;
+                border-radius: 0;
+                text-align: left;
+            }
+            #logo img {
+                float: left;
+                width: 190px;
+                height: auto;
+            }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="hero">
+            <video autoplay loop muted plays-inline id="back-video">
+                <source src="royalty.mp4.mp4" type="video/mp4">
+            </video>
+        </div>
+        <header>
+            <dir id="logo">
+                <img src="shop logo.png">
+            </dir>
+        </header>
+        <nav id="sitenav">
+            <ul>
+                <li id="active"><a href="#">Home</a></li>
+ 
+ 
+                <li><a href="#">Seeds</a>
+                <nav class="sub-menu-1">
+                    <ul>
+                        <li class="hover-me"><a href="#">Hybrid</a><i class="fa fa-angle-right"></i>
+                        <div class="sub-menu-2">
+                            <ul>
+                                <li><a href="#">Maize</a></li>
+                                <li><a href="#">Sorghum</a></li>
+                                <li><a href="#">Cowpeas</a></li>
+                                <li><a href="#">Sunflower</a></li>
+                                <li><a href="#">Lab Lab</a></li>
+                                <li><a href="#">Groundnuts</a></li>
+                                <li><a href="#">Sugarbeans</a></li>
+                            </ul>
+                        </div>
+                        </li>
+ 
+                        <li class="hover-me"><a href="#">OPV</a><i class ="fa fa-angle-right"></i>
+                        <div class="sub-menu-2">
+                            <ul>
+                                <li><a href="#">Maize</a></li>
+                                <li><a href="#">Sorghum</a></li>
+                                <li><a href="#">Cowpeas</a></li>
+                                <li><a href="#">Sunflower</a></li>
+                                <li><a href="#">Lab Lab</a></li>
+                                <li><a href="#">Groundnuts</a></li>
+                                <li><a href="#">Sugarbeans</a></li>
+                            </ul>
+                        </div>
+                        </li>
+                    </ul>
+                </nav>
+                </li>
+ 
+ 
+ 
+ 
+                <li><a href="#">Agrochemicals</a></li>
+                <li><a href="#">Tractors & Implements</a></li>
+                <li><a href="#">Drones</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Branches</a></li>
+            </ul>
+        </nav>
+        <div id="sitenav">
+            <section id="main-content">
+                <ul>
+                    <li>We assist famers who have Lemang Dijo coupons</li>
+                    <li>Protecting farms from Fall armyworm</li>
+                    <li>Know the latest agricultural techniques</li>
+                    <li>Accelerating agricultural productivity</li>
+                </ul>
+            </section>
+        </div>
+        <h3>Featured articles</h3>
+        <div id="featured-articles">
+            <!--article1--leftsidebar-->
+            <section id="leftsidebar">
+                <h4>Farmers testimonials</h4>
+                <p>Our products and services have transformed the lives of farmers, boosting their productivity and profitability.</p>
+            </section>
+            <!--article2--middlebar-->
+            <section id="middlebar">
+                <h4>Join us for some Agricultural shows fun</h4>
+                <p>Discover the latest trends and innovations in agriculture by attending upcoming National and International Agricultural shows.</p>
+            </section>
+            <!--article3--rightsidebar-->
+            <section id="rightsidebar">
+                <h4>Learning materials</h4>
+                <p>Access a wealth of learning materials including PDF's and videos.</p>
+            </section>
+            </div>
+        </div>
+        <h3>Mission and Vision</h3>
+        <div id="mission-vision">
+            <!--mission--leftsidebar-->
+            <section id="leftsidebar">
+                <h4>Mission</h4>
+                <p>To provide high-quality Arable agriculture products and services that empower farmers to achieve sustainable growth and food security.</p>
+            </section>
+            <!--vision--rightsidebar-->
+            <section id="rightsidebar">
+                <h4>Vision</h4>
+                <p>To be the leading Arable agriculture company in Botswana, recognized for our commitment to innovation, sustainability and customer satisfaction.</p>
+            </section>
+        </div>
+        <footer>
+            <ul>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">FAQ's</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>
+ 
